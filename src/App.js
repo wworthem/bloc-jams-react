@@ -14,14 +14,14 @@ class App extends Component {
             <Link to='/'>Landing</Link>
             <Link to='/library'>Library</Link>
 
-            
+
           </nav>
           <h1>Bloc Jams</h1>
         </header>
         <main>
           <Route exact path="/" component={Landing} />
           <Route path="/library" component={Library} />
-          <Route path="/album" component={Album} />
+          <Route path="/album:slug" component={Album} />
         </main>
       </div>
     );
