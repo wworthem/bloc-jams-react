@@ -4,7 +4,7 @@ import albumData from './../data/albums';
 class Album extends Component {
   constructor(props) {
     super(props);
-
+    console.log(albumData);
   const album = albumData.find( album => {
     return album.slug === this.props.match.params.slug
   });
