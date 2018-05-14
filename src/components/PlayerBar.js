@@ -27,7 +27,6 @@ class PlayerBar extends Component {
           <input type="range" className="seek-bar" value="80" />
           <div className="icon ion-volume-high"></div>
         </section>
-
       </section>
     );
 
