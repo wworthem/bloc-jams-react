@@ -106,6 +106,9 @@ handleVolumeChange(e) {
 
 
   formatTime(SecondsInStringFormat) {
+    if(isNaN(SecondsInStringFormat))
+      {return "-:--"}
+
     var sec_num = parseInt(SecondsInStringFormat, 10); // don't forget the second parm
     var hours = Math.floor(sec_num / 3600);
 
@@ -172,7 +175,8 @@ handleVolumeChange(e) {
           handleNextClick={()=> this.handleNextClick()}
           handleTimeChange={(e) => this.handleTimeChange(e)}
           handleVolumeChange={(e) => this.handleVolumeChange(e)}
-          fomatTime={this.formatTime()}
+          formatTime={this.formatTime}
+          /*formatTime={(e) => this.formatTime(e)} */
 
         />
       </section>
