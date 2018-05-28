@@ -1,0 +1,16 @@
+body {
+  font-family: Verdana, Algerian;
+  background-color: #4286f4;
+}
+
+/*
+.library {
+  width: 300px;
+  height: 300;
+}
+*/
+
+.libray img {
+  width: 30%;
+  height: auto;
+}

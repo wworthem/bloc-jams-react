@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar.js';
+import './../Album.css';
 
 class Album extends Component {
   constructor(props) {
